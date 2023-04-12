@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Марго</title>
+		<style>
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+				font-family: 'Montserrat', sans-serif;
+			}
+			body {
+				background-color: #abd7eb;
+				min-width: 100vw;
+				min-height: 100vh;
+				padding: 10px;
+			}
+			.wrapper {
+				width: 100%;
+				display: flex;
+				min-height: 100vh;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				color: #2c9a8e;
+			}
+			h1 {
+				margin: 20px;
+				font-size: calc((1vh+1vw) * 5.5);
+				text-align: center;
+			}
+			p {
+				color: #47485d;
+				font-size: calc((1vh+1vw) * 3);
+				transition: 1s;
+				text-align: center;
+			}
+			h2 {
+				margin: 20px;
+				font-size: calc((1vh+1vw) * 4.5);
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Марго, ты</h1>
+			<p id="paragraph">Самая красивая пуська</p>
+			<h2>Я тебя люблю!</h2>
+		</div>
+	</body>
+	<script defer>
+		'use strict';
+		let first = [
+			'Самая',
+			'Самая самая',
+			'Офигенно',
+			'Охуенно',
+			'Внеземно',
+			'Супер-пупер',
+			'Подтвержденно',
+			'Задокументированно',
+			'Доказано',
+			'Мило-мило',
+			'По факту',
+			'По-настоящему',
+		];
+		let second = [
+			'красивая',
+			'умная',
+			'милая',
+			'офигенная',
+			'любимая',
+			'ответственная',
+			'любящая',
+			'мудрая',
+			'опупенная',
+			'понимающая',
+			'сладенькая',
+			'вкусненькая',
+			'худенькая',
+			'офигенная',
+			'любимая',
+			'пусичная',
+		];
+		let third = [
+			'конфетка',
+			'любимка',
+			'птичка',
+			'пуся',
+			'милашка',
+			'кошечка',
+			'мини-пижечка',
+			'умняшка',
+			'мороженка',
+			'сися',
+			'кися',
+			'попка',
+			'милашка',
+			'',
+		];
+		document.querySelector('#paragraph').innerHTML =
+			first[Math.floor(Math.random() * first.length)] +
+			' ' +
+			second[Math.floor(Math.random() * second.length)] +
+			' ' +
+			third[Math.floor(Math.random() * third.length)];
+		console.log(word);
+	</script>
+</html>
